@@ -1,0 +1,407 @@
+/* header */
+.header{
+    background: var(--bg-1);    
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    position: sticky;
+    width: 100%;
+    z-index: 2;
+    top:0;
+    left: 0;
+    padding:0 40px ;
+}
+.header .inner-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.header .inner-wrap .inner-logo img{
+    height: 50px;
+    width: auto;
+    
+}
+
+.header .inner-logo a{
+    display: flex;
+    align-items: center;
+}
+
+.header .inner-logo span{
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-left: 10px;
+}
+.header .inner-menu ul{
+    list-style: none;
+    margin: 0;
+    padding:0;
+    display: flex;
+}
+
+.header .inner-menu ul li a{
+    display: inline-block;
+    padding:15px 20px;
+    color: var(--color-text);
+    font-size:18px ;
+}
+
+.header .inner-social ul li{
+margin-left:10px ;
+}
+
+.header .inner-social ul{
+    margin:0;
+    padding: 0;
+    display:flex;
+    align-items: center;
+}
+
+.header .inner-social ul li{
+    list-style: none;
+}
+.header .inner-social ul li a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background: #fff;
+    color: var(--color-text);
+}
+/* end header */
+/* section one */
+.section-one{
+    background-image: url(../image/background1.jpg);
+    padding :100px 0;
+    position: relative;
+}    
+.section-one::before{
+    content: "";
+    position: absolute;
+    background: #000;
+    top:0;
+    left: 0;
+    opacity:0.6;
+    width: 100%;
+    height: 100%;
+}
+.section-one .inner-wrap{
+    position: relative;
+}
+.section-one .inner-title{
+    color: #fff;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom:20px ;
+
+}
+
+.section-one .inner-sub-title{
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 10px;
+
+
+}
+.section-one .inner-desc{
+    color: #fff;
+    margin-bottom: 30px;
+}
+/* end section one */
+/* button */
+.button{
+    color:var(--color-text);
+    background: #fff;
+    border: 2px solid #fff;
+    padding: 15px 20px;
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    /* de khi minh hover vao no se chuyen thanh hinh ban tay */
+}
+
+.button-two{
+    background: var(--color-two);
+    color: var(--color-text);
+    border-color: var(--color-two);
+
+}
+
+.button-two:hover{
+    background: #fff;
+    border-color:#fff;
+}
+.button-two-outline{
+    background: transparent;
+    /* transparent thuoc tinh mau trong suot */
+    color: #fff;
+}
+
+.button-two-outline:hover{
+    background: var(--color-two);
+    color: var(--color-text);
+    border-color: var(--color-two);
+}
+.section-one .button{
+    margin-right: 10px;
+}
+.button-dark{
+    background: var(--color-text);
+    color:#fff;
+    border-color: var(--color-text);
+
+}
+
+.button-dark:hover{
+    background:var(--color-two);
+    color: var(--color-text);
+    border-color:var(--color-two);
+}
+/* end button */
+
+/* section-two */
+.section-two{
+    padding: 80px 0 50px;
+    background: var(--bg-1);
+    /* padding ben tren 80 trai phai 0 ben duoi 50*/
+
+}
+.section-two .inner-wrap{
+    display: flex;
+    align-items: center;
+    /* de image va content cung 1 hang */
+}
+.section-two .inner-wrap .inner-image {
+    width: 40%;
+    margin-right:5%;
+}
+.section-two .inner-wrap .inner-image img{
+    width: 100%;
+    /* chieu rong so voi box cha la inner-image */
+    height: auto;
+    border-radius: 8px;
+}
+
+.section-two .inner-wrap .inner-content{
+    flex: 1;
+    /* no se tu dong de thang content chiem phan con lai cua khoi cha la inner-wrap */
+    /* neu noi dung dai ra no se khong bi loi nx */
+}
+.section-two .inner-wrap .inner-content .inner-sub-title{
+    font-size: 20px;
+}
+.section-two .inner-wrap .inner-content .inner-title{
+    font-size: 60px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.section-two .inner-wrap .inner-list{
+    display: flex;
+
+}
+.section-two .inner-wrap .inner-list .inner-item{
+    display: flex;
+    /* neu cha de flex thi de display block hay inline block chieu rong cung chi bang chieu rong cua content thoi */
+    background: #fff;
+    flex-direction: column;
+    /* de can hai element con cua inner-list theo chieu doc */
+    border-radius: 8px;
+    margin-right:20px;
+    width:140px ;
+    height: 140px;
+    align-items: center;
+    /* can content theo chieu doc */
+    justify-content: center;
+    /* can content theo chieu ngang */
+}
+.section-two .inner-wrap .inner-item i{
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: var(--color-one);
+}
+
+.section-two .inner-wrap .inner-item span{
+    font-weight: 600;
+}
+.section-two .button-button-two{
+    color:var(--color-text);
+    background:var(--color-two);
+    border: 2px solid var(--color-two);
+    padding: 15px 20px;
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.section-two .inner-desc{
+    color:#777777;
+    margin-bottom: 20px;
+}
+.section-two .button-button-two:hover{
+    background: #fff;
+}
+
+/* end section-two */
+
+/* section-three */
+.section-three{
+    background:var(--bg-1);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.section-three .inner-wrap{
+    display: flex;
+    background: #fff;
+    padding:40px;
+    border-radius: 8px;
+}
+.section-three .inner-image{
+    width: 35%;
+    margin-left: 20px;
+}
+.section-three .inner-image img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+    /* border theo thu tu theo chieu kim dong ho */
+    margin-top: -120px;
+    margin-bottom: -308px;
+}
+.section-three .inner-content{
+    flex:1;
+}
+.section-three .inner-content .inner-sub-title{
+    color:#777777;
+    margin-top: 0;
+}
+
+.section-three .inner-content .inner-title{
+    color:var(--color-text);
+    font-size: 70px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+/* end section-three */
+/* contact-form */
+.contact-form{
+    padding: 80px 0;  
+}
+.contact-form{
+    padding: 80px 0;  
+}
+.contact-form .inner-wrap{
+    background: var(--bg-2);
+    padding: 60px 60px;
+    border-radius: 8px;
+}
+.contact-form .inner-wrap .inner-form-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contact-form .inner-wrap .inner-form-wrap input, .contact-form .inner-wrap .inner-form-wrap textarea{
+    border: 0;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    outline: 0;
+}
+.contact-form .inner-wrap .inner-form-wrap input{
+    width: 32.5%;
+    height: 50px;
+}
+.contact-form .inner-wrap .inner-button{
+    text-align: right;
+}
+.contact-form .inner-wrap .inner-form-wrap textarea{
+    width: 100%;
+    height:150px ;
+}
+/* end contact-form */
+
+/* view-action */
+.view-action{
+    padding: 80px 0;
+    background: var(--bg-2);
+}
+.view-action .inner-wrap{
+    aspect-ratio: 16/9;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+.view-action .inner-wrap img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.view-action .inner-wrap .inner-button{
+   position: absolute;
+   top:calc(50% - 60px);
+   left:calc(50% - 60px);
+   background: #fff;
+   width: 120px;
+   height:120px;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   /* can theo chieu doc */
+   justify-content: center;
+   font-size: 24px;
+   /* can theo chieu ngang */
+}
+ .view-action .inner-wrap .inner-button::before{
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 120px;
+    background: #ffffff;
+    opacity: 0.8;
+    border-radius: 50%;
+    animation-duration: 1s;
+    animation-name: icons;
+    animation-iteration-count: infinite;
+} 
+@keyframes icons {
+  from {
+    width: 120px;
+    height: 120px;
+    opacity: 0.8;
+  }
+  to {
+    width: 160px;
+    height: 160px;
+    opacity: 0;
+  }
+}
+.view-action .inner-wrap .inner-button i{
+    position: relative;
+}
+/* end view-action */
+
+
+/* box-head */
+.box-head{
+    margin-bottom: 30px;
+}
+.box-head .inner-sub-title{
+    color: #777777;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom:10px;
+}
+.box-head .inner-title{
+    color: var(--color-text);
+    font-size: 58px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.box-head-center{
+    text-align: center;
+}
+/* end box-head */
